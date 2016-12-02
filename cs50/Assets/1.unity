@@ -258,6 +258,8 @@ MonoBehaviour:
   spawnLeastWait: 0
   startWait: 0
   stop: 0
+  maxNumTargets: 0
+  numTargets: 0
 --- !u!4 &1352955762
 Transform:
   m_ObjectHideFlags: 0
@@ -302,12 +304,14 @@ MonoBehaviour:
   targets:
   - {fileID: 1000011651898376, guid: a796a79a5cf95c947b93ecfaf9b48343, type: 2}
   - {fileID: 1000011651898376, guid: a796a79a5cf95c947b93ecfaf9b48343, type: 2}
-  spawnValues: {x: 0, y: 0.5, z: 5}
+  spawnValues: {x: 0, y: 3, z: 5}
   spawnWait: 1
   spawnMostWait: 3
   spawnLeastWait: 1
   startWait: 1
   stop: 0
+  maxNumTargets: 8
+  numTargets: 0
 --- !u!4 &1370488271
 Transform:
   m_ObjectHideFlags: 0
