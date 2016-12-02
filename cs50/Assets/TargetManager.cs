@@ -32,7 +32,7 @@ public class TargetManager : MonoBehaviour {
     IEnumerator waitSpawner()
     {
         yield return new WaitForSeconds(startWait);
-
+        // do something to control maximum number of targets. 
         while (!stop)
         {
             randTarget = UnityEngine.Random.Range(0, 2);

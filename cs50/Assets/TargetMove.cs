@@ -2,14 +2,16 @@
 using System.Collections;
 
 public class TargetMove : MonoBehaviour {
-    public float speed = 30;
-    //public float height = gameObject.transform.y;
-    private Vector3 pivot = new Vector3(0, .5F , 0);
-
+    //public GameObject TargetPrefab;
+    public float speed; 
+    public float height;
+    private Vector3 pivot;
     // Use this for initialization
     void Start() {
-
-    //public float hieght = transform.position.y;
+        speed = UnityEngine.Random.Range(-40, 40);
+        height = gameObject.transform.position.x;
+        pivot = new Vector3(0, height, 0);
+        //public float hieght = transform.position.y;
 
 
     }
