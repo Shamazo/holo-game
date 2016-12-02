@@ -49,6 +49,7 @@
      <Compile Include="Assets\Cursor.cs" />
      <Compile Include="Assets\GazeGestureManager.cs" />
      <Compile Include="Assets\ScriptManager.cs" />
+     <Compile Include="Assets\TargetManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity HoloLens 5.4.0f3-HTP/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
