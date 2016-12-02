@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TargetMove : MonoBehaviour {
     public float speed = 30;
-    public float height = .5F;
+    //public float height = gameObject.transform.y;
     private Vector3 pivot = new Vector3(0, .5F , 0);
 
     // Use this for initialization

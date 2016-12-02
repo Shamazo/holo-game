@@ -23,6 +23,7 @@ GameObject:
   - 135: {fileID: 135000010725124730}
   - 23: {fileID: 23000010479308948}
   - 114: {fileID: 114000011636575208}
+  - 114: {fileID: 114000010512835612}
   m_Layer: 0
   m_Name: TargetPrefab
   m_TagString: Untagged
@@ -79,13 +80,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011651898376}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114000011636575208
+--- !u!114 &114000010512835612
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011651898376}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4eb8d8a694ef24b986c1cc3c73e8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  height: 0.5
+--- !u!114 &114000011636575208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011651898376}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef7819a2ae0c96e48b29dd404d45ab64, type: 3}
   m_Name: 
