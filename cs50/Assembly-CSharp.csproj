@@ -49,9 +49,18 @@
      <Compile Include="Assets\CollisionDetection.cs" />
      <Compile Include="Assets\Cursor.cs" />
      <Compile Include="Assets\GazeGestureManager.cs" />
+     <Compile Include="Assets\Holograms\Support\AniCrane\AnimationSpeed.cs" />
+     <Compile Include="Assets\Holograms\Support\Fitbox\Fitbox.cs" />
+     <Compile Include="Assets\Holograms\Support\Fitbox\Interpolator.cs" />
+     <Compile Include="Assets\Holograms\Support\Underworld\UnderworldReset.cs" />
+     <Compile Include="Assets\Holograms\Support\Underworld\UnderworldSound.cs" />
      <Compile Include="Assets\ScriptManager.cs" />
+     <Compile Include="Assets\Scripts\WorldCursor.cs" />
      <Compile Include="Assets\TargetManager.cs" />
      <Compile Include="Assets\TargetMove.cs" />
+     <None Include="Assets\Resources\Wireframe.shader" />
+     <None Include="Assets\Resources\DebugNormals.shader" />
+     <None Include="Assets\Resources\Occlusion.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity HoloLens 5.4.0f3-HTP/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
