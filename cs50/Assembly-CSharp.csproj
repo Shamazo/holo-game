@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Capsule.cs" />
+     <Compile Include="Assets\CollisionDetection.cs" />
      <Compile Include="Assets\Cursor.cs" />
      <Compile Include="Assets\GazeGestureManager.cs" />
      <Compile Include="Assets\ScriptManager.cs" />

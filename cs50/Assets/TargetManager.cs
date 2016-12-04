@@ -30,6 +30,8 @@ public class TargetManager : MonoBehaviour {
         spawnWait = UnityEngine.Random.Range(spawnLeastWait, spawnMostWait);
         // check if has been hit by projectile 
        // if hit by projectile reduce number of targets 
+
+
     }
 
     IEnumerator waitSpawner()
