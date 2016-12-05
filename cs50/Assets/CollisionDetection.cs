@@ -7,6 +7,11 @@ public class CollisionDetection : MonoBehaviour {
     {
         Debug.Log("Collision detected with trigger object " + other.name);
         gameObject.transform.position.Set(0,0,0) ;
+
+        if (other.gameObject.name == "Projectile")
+            {
+            Destroy(gameObject);
+           }
     }
     void OnTriggerStay(Collider other)
     {
