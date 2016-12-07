@@ -25,7 +25,7 @@ public class ProjectileScript : MonoBehaviour {
     void ShootProjectile(Vector3 start, Vector3 direction)
     {
         GameObject spawnedProjectile = (GameObject)Instantiate(Projectile);
-
+        Destroy(gameObject, 4);
         // set the projectile's starting location to be slightly in front of user
         spawnedProjectile.transform.position = start;
 
@@ -33,7 +33,7 @@ public class ProjectileScript : MonoBehaviour {
         Rigidbody rigidBody = spawnedProjectile.GetComponent<Rigidbody>();
 
         // apply force to the projectile          
-        rigidBody.velocity = 4 * direction;
+        rigidBody.velocity = 5 * direction;
 
         // make the projectile spin
         rigidBody.angularVelocity = Random.onUnitSphere * 20;
