@@ -297,6 +297,7 @@
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldSound.cs" />
      <Compile Include="Assets\ProjectileScript.cs" />
      <Compile Include="Assets\ScriptManager.cs" />
+     <Compile Include="Assets\Scripts\VoiceScript.cs" />
      <Compile Include="Assets\Scripts\WorldCursor.cs" />
      <Compile Include="Assets\TargetManager.cs" />
      <Compile Include="Assets\TargetMove.cs" />

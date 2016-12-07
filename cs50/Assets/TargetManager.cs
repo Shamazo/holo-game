@@ -25,6 +25,22 @@ public class TargetManager : MonoBehaviour {
         StartCoroutine(waitSpawner());
     }
 
+    void delete()
+    {
+        numTargets -= 1; 
+    }
+
+    void OnReset()
+    {
+        numTargets = 0;
+        targets = GameObject.FindGameObjectsWithTag("TargetPrefab");
+        for (int i = 0; i < targets.Length; i ++)
+        {
+            Destroy(targets[i]);
+        }
+        //delete all targets ...
+        //delete all projectiles
+    }
 
 
     // Update is called once per frame
