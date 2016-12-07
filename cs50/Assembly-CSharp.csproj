@@ -45,10 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Capsule.cs" />
-     <Compile Include="Assets\CollisionDetection.cs" />
-     <Compile Include="Assets\Cursor.cs" />
-     <Compile Include="Assets\GazeGestureManager.cs" />
      <Compile Include="Assets\HoloToolkit-Examples\ColorPicker\GazeableColorPicker.cs" />
      <Compile Include="Assets\HoloToolkit-Examples\GazeRuler\Scripts\DeleteLine.cs" />
      <Compile Include="Assets\HoloToolkit-Examples\GazeRuler\Scripts\IGeometry.cs" />
@@ -295,15 +291,19 @@
      <Compile Include="Assets\Holograms\Support\Fitbox\Interpolator.cs" />
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldReset.cs" />
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldSound.cs" />
-     <Compile Include="Assets\ProjectileScript.cs" />
-     <Compile Include="Assets\ScoreManager.cs" />
-     <Compile Include="Assets\ScriptManager.cs" />
+     <Compile Include="Assets\Scripts\Capsule.cs" />
+     <Compile Include="Assets\Scripts\CollisionDetection.cs" />
+     <Compile Include="Assets\Scripts\Cursor.cs" />
+     <Compile Include="Assets\Scripts\GazeGestureManager.cs" />
+     <Compile Include="Assets\Scripts\ProjectileScript.cs" />
+     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\ScriptManager.cs" />
+     <Compile Include="Assets\Scripts\TargetManager.cs" />
+     <Compile Include="Assets\Scripts\TargetMove.cs" />
+     <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\VoiceScript.cs" />
      <Compile Include="Assets\Scripts\WorldCursor.cs" />
-     <Compile Include="Assets\TargetManager.cs" />
-     <Compile Include="Assets\TargetMove.cs" />
-     <Compile Include="Assets\TimeManager.cs" />
-     <Compile Include="Assets\projectileInputManager.cs" />
+     <Compile Include="Assets\Scripts\projectileInputManager.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
      <None Include="Assets\HoloToolkit\SpatialUnderstanding\Materials\SpatialUnderstandingSurface.shader" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.cginc" />

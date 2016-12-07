@@ -5,7 +5,7 @@ using System;
 public class TargetManager : MonoBehaviour {
 
     public GameObject TargetPrefab;
-
+    //although we only have 1 target at the moment, having an array allows us to easily add more targets of different types later 
     public GameObject[] targets;
     public Vector3 spawnValues;
     public Vector3 minSpawnValues;
@@ -25,6 +25,7 @@ public class TargetManager : MonoBehaviour {
         StartCoroutine(waitSpawner());
     }
 
+    //called by CollisionDetection
     void delete()
     {
         numTargets -= 1; 
@@ -38,29 +39,22 @@ public class TargetManager : MonoBehaviour {
         {
             Destroy(targets[i]);
         }
-        //delete all targets ...
-        //delete all projectiles
     }
 
 
     // Update is called once per frame
     void Update () {
+        //randomly change how long for targets to wait before spawning
         spawnWait = UnityEngine.Random.Range(spawnLeastWait, spawnMostWait);
-        // check if has been hit by projectile 
-       // if hit by projectile reduce number of targets 
-
-
     }
 
     IEnumerator waitSpawner()
     {
-        yield return new WaitForSeconds(startWait);
-        // do something to control maximum number of targets. 
+        yield return new WaitForSeconds(startWait); 
         while (!stop)
         {
             if (numTargets < maxNumTargets)
             {
-                print(numTargets);
                 randTarget = UnityEngine.Random.Range(0, 1);
                 Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(minSpawnValues.x, spawnValues.x), UnityEngine.Random.Range(minSpawnValues.y, spawnValues.y), UnityEngine.Random.Range(minSpawnValues.z, spawnValues.z));
 

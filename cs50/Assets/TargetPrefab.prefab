@@ -104,6 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56969e9c75a81041beb4190cca607d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TargetSpawner: {fileID: 0}
+  ScoreDisplay: {fileID: 0}
+  ImpactClip: {fileID: 8300000, guid: d50d513ad4f6cf54994847b417f47cdb, type: 3}
 --- !u!135 &135000010725124730
 SphereCollider:
   m_ObjectHideFlags: 1
