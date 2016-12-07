@@ -30,7 +30,7 @@ namespace HoloToolkit.Unity.InputModule
             }
         }
 
-        private void Awake()
+        public void Awake()
         {
             projectile = GameObject.FindGameObjectWithTag("projectilePrefab");
             gestureRecognizer = new GestureRecognizer();
@@ -98,7 +98,8 @@ namespace HoloToolkit.Unity.InputModule
         private void OnTappedEvent(InteractionSourceKind source, int tapCount, Ray headRay)
         {
             SourceClickEventArgs args = new SourceClickEventArgs(this, 0, tapCount);
-            projectile.SendMessage("OnSelect");
+            projectile = GameObject.FindGameObjectWithTag("projectilePrefab");
+            projectile.SendMessage("OnSelect", SendMessageOptions.RequireReceiver);
             RaiseSourceClickedEvent(args);
         }
 

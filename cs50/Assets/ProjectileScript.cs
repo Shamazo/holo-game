@@ -28,7 +28,7 @@ public class ProjectileScript : MonoBehaviour {
         Destroy(gameObject, 4);
         // set the projectile's starting location to be slightly in front of user
         spawnedProjectile.transform.position = start;
-
+        print("this should create a projectile");
         // get the RigidBody to apply force to projectile
         Rigidbody rigidBody = spawnedProjectile.GetComponent<Rigidbody>();
 
