@@ -17,6 +17,7 @@ namespace HoloToolkit.Unity.InputModule
 
         private GestureRecognizer gestureRecognizer;
         private GestureRecognizer navigationGestureRecognizer;
+        public GameObject projectile;
 
         public override SupportedInputEvents SupportedEvents
         {
@@ -31,6 +32,7 @@ namespace HoloToolkit.Unity.InputModule
 
         private void Awake()
         {
+            projectile = GameObject.FindGameObjectWithTag("projectilePrefab");
             gestureRecognizer = new GestureRecognizer();
             gestureRecognizer.TappedEvent += OnTappedEvent;
             
@@ -96,6 +98,7 @@ namespace HoloToolkit.Unity.InputModule
         private void OnTappedEvent(InteractionSourceKind source, int tapCount, Ray headRay)
         {
             SourceClickEventArgs args = new SourceClickEventArgs(this, 0, tapCount);
+            projectile.SendMessage("OnSelect");
             RaiseSourceClickedEvent(args);
         }
 

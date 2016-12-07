@@ -23,11 +23,10 @@ GameObject:
   - 135: {fileID: 135000011206948498}
   - 23: {fileID: 23000011321000738}
   - 54: {fileID: 54000012556157412}
-  - 114: {fileID: 114000013014988552}
   - 114: {fileID: 114000012123990698}
   m_Layer: 0
   m_Name: ProjectilePrefab
-  m_TagString: Untagged
+  m_TagString: projectilePrefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,17 +107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 0}
---- !u!114 &114000013014988552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013443426726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b160d197a8ca1894796ae263bafec0ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &135000011206948498
 SphereCollider:
   m_ObjectHideFlags: 1

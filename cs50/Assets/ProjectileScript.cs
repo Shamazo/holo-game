@@ -3,8 +3,14 @@ using System.Collections;
 
 public class ProjectileScript : MonoBehaviour {
 
+
     // Projectile prefab with a RigidBody component
     public GameObject Projectile;
+
+    void Awake()
+    {
+        gameObject.tag = "projectilePrefab";
+    }
 
     void OnSelect()
     {
@@ -15,6 +21,7 @@ public class ProjectileScript : MonoBehaviour {
         ShootProjectile(projectilePosition, projectileDirection);
     }
 
+    // need to clean up projectile, should dissapear after a set time
     void ShootProjectile(Vector3 start, Vector3 direction)
     {
         GameObject spawnedProjectile = (GameObject)Instantiate(Projectile);

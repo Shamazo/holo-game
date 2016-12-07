@@ -300,6 +300,7 @@
      <Compile Include="Assets\Scripts\WorldCursor.cs" />
      <Compile Include="Assets\TargetManager.cs" />
      <Compile Include="Assets\TargetMove.cs" />
+     <Compile Include="Assets\projectileInputManager.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
      <None Include="Assets\HoloToolkit\SpatialUnderstanding\Materials\SpatialUnderstandingSurface.shader" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.cginc" />
