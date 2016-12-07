@@ -44,7 +44,8 @@ public class TargetManager : MonoBehaviour {
         {
             if (numTargets < maxNumTargets)
             {
-                randTarget = UnityEngine.Random.Range(0, 2);
+                print(numTargets);
+                randTarget = UnityEngine.Random.Range(0, 1);
                 Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(minSpawnValues.x, spawnValues.x), UnityEngine.Random.Range(minSpawnValues.y, spawnValues.y), UnityEngine.Random.Range(minSpawnValues.z, spawnValues.z));
 
                 Instantiate(targets[randTarget], (spawnPosition + transform.TransformPoint(0, 0, 0)), gameObject.transform.rotation);
