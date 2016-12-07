@@ -24,7 +24,6 @@ GameObject:
   - 135: {fileID: 135000010725124730}
   - 114: {fileID: 114000011988565732}
   - 114: {fileID: 114000010512835612}
-  - 114: {fileID: 114000013197946450}
   m_Layer: 0
   m_Name: TargetPrefab
   m_TagString: Untagged
@@ -105,29 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56969e9c75a81041beb4190cca607d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000013197946450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011651898376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4843f11cd93ef3c4c9764338f095c0bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetPrefab: {fileID: 0}
-  targets:
-  - {fileID: 1000011651898376}
-  spawnValues: {x: 4, y: 2, z: 4}
-  minSpawnValues: {x: 0, y: 0, z: 0}
-  spawnWait: 1
-  spawnMostWait: 10
-  spawnLeastWait: 2
-  startWait: 1
-  stop: 0
-  maxNumTargets: 8
-  numTargets: 0
 --- !u!135 &135000010725124730
 SphereCollider:
   m_ObjectHideFlags: 1
