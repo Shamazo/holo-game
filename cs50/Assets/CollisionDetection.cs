@@ -2,15 +2,13 @@
 using System.Collections;
 
 public class CollisionDetection : MonoBehaviour {
-    //need to make sure balls pass through each other. and only collide with projectiles 
+    
+    //called when the projectile and target collide
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collision detected with trigger object " + other.name);
+            //we want both the target and the projectile to be destroyed when they collide
             Destroy(gameObject);
             Destroy(other.gameObject);
-    }
-    void OnTriggerStay(Collider other)
-    {
-        print("Still colliding with trigger object " + other.name);
     }
 }

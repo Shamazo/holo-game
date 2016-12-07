@@ -14,10 +14,8 @@ public class ProjectileScript : MonoBehaviour {
 
     void OnSelect()
     {
-        Vector3 projectilePosition = Camera.main.transform.position + Camera.main.transform.forward * 0.85f;
-
+        Vector3 projectilePosition = Camera.main.transform.position + Camera.main.transform.forward * 0.8f;
         Vector3 projectileDirection = Camera.main.transform.forward;
-
         ShootProjectile(projectilePosition, projectileDirection);
     }
 
@@ -25,14 +23,14 @@ public class ProjectileScript : MonoBehaviour {
     void ShootProjectile(Vector3 start, Vector3 direction)
     {
         GameObject spawnedProjectile = (GameObject)Instantiate(Projectile);
-        Destroy(gameObject, 4);
-        // set the projectile's starting location to be slightly in front of user
+        Destroy(gameObject, 3);
+        // set the projectile's starting location to be just in front of user
         spawnedProjectile.transform.position = start;
         // get the RigidBody to apply force to projectile
         Rigidbody rigidBody = spawnedProjectile.GetComponent<Rigidbody>();
 
-        // apply force to the projectile          
-        rigidBody.velocity = 10 * direction;
+        // give projectile a velocity           
+        rigidBody.velocity = 50 * direction;
 
         // make the projectile spin
         rigidBody.angularVelocity = Random.onUnitSphere * 20;
