@@ -23,7 +23,7 @@ public class ProjectileScript : MonoBehaviour {
     void ShootProjectile(Vector3 start, Vector3 direction)
     {
         GameObject spawnedProjectile = (GameObject)Instantiate(Projectile);
-        Destroy(gameObject, 3);
+        Destroy(spawnedProjectile.gameObject, 3);
         // set the projectile's starting location to be just in front of user
         spawnedProjectile.transform.position = start;
         // get the RigidBody to apply force to projectile
