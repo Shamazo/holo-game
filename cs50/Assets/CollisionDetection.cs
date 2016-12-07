@@ -8,9 +8,10 @@ public class CollisionDetection : MonoBehaviour {
         Debug.Log("Collision detected with trigger object " + other.name);
         gameObject.transform.position.Set(0,0,0) ;
 
-        if (other.gameObject.name == "Projectile")
+        if (other.gameObject.tag == "projectilePrefab")
             {
             Destroy(gameObject);
+            Destroy(other.gameObject);
            }
     }
     void OnTriggerStay(Collider other)

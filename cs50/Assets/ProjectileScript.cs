@@ -28,12 +28,11 @@ public class ProjectileScript : MonoBehaviour {
         Destroy(gameObject, 4);
         // set the projectile's starting location to be slightly in front of user
         spawnedProjectile.transform.position = start;
-        print("this should create a projectile");
         // get the RigidBody to apply force to projectile
         Rigidbody rigidBody = spawnedProjectile.GetComponent<Rigidbody>();
 
         // apply force to the projectile          
-        rigidBody.velocity = 5 * direction;
+        rigidBody.velocity = 10 * direction;
 
         // make the projectile spin
         rigidBody.angularVelocity = Random.onUnitSphere * 20;
