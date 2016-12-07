@@ -296,11 +296,13 @@
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldReset.cs" />
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldSound.cs" />
      <Compile Include="Assets\ProjectileScript.cs" />
+     <Compile Include="Assets\ScoreManager.cs" />
      <Compile Include="Assets\ScriptManager.cs" />
      <Compile Include="Assets\Scripts\VoiceScript.cs" />
      <Compile Include="Assets\Scripts\WorldCursor.cs" />
      <Compile Include="Assets\TargetManager.cs" />
      <Compile Include="Assets\TargetMove.cs" />
+     <Compile Include="Assets\TimeManager.cs" />
      <Compile Include="Assets\projectileInputManager.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
      <None Include="Assets\HoloToolkit\SpatialUnderstanding\Materials\SpatialUnderstandingSurface.shader" />
